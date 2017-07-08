@@ -16,6 +16,8 @@
 		2245A2951F10718A00177227 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2245A2931F10718A00177227 /* LaunchScreen.storyboard */; };
 		2245A2A01F10718A00177227 /* YDHPageViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2245A29F1F10718A00177227 /* YDHPageViewControllerTests.m */; };
 		2245A2AB1F10718A00177227 /* YDHPageViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2245A2AA1F10718A00177227 /* YDHPageViewControllerUITests.m */; };
+		2245A2BB1F10730D00177227 /* YDHPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2245A2BA1F10730D00177227 /* YDHPageViewController.m */; };
+		2245A2C11F1073EF00177227 /* YDHSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 2245A2C01F1073EF00177227 /* YDHSegmentBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		2245A2A61F10718A00177227 /* YDHPageViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YDHPageViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2245A2AA1F10718A00177227 /* YDHPageViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YDHPageViewControllerUITests.m; sourceTree = "<group>"; };
 		2245A2AC1F10718A00177227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2245A2B91F10730D00177227 /* YDHPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDHPageViewController.h; sourceTree = "<group>"; };
+		2245A2BA1F10730D00177227 /* YDHPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDHPageViewController.m; sourceTree = "<group>"; };
+		2245A2BF1F1073EF00177227 /* YDHSegmentBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDHSegmentBar.h; sourceTree = "<group>"; };
+		2245A2C01F1073EF00177227 /* YDHSegmentBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDHSegmentBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,7 @@
 		2245A2811F10718A00177227 /* YDHPageViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2245A2B81F1072CA00177227 /* YDHUIPageViewController */,
 				2245A2851F10718A00177227 /* AppDelegate.h */,
 				2245A2861F10718A00177227 /* AppDelegate.m */,
 				2245A2881F10718A00177227 /* ViewController.h */,
@@ -141,6 +148,17 @@
 				2245A2AC1F10718A00177227 /* Info.plist */,
 			);
 			path = YDHPageViewControllerUITests;
+			sourceTree = "<group>";
+		};
+		2245A2B81F1072CA00177227 /* YDHUIPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2245A2B91F10730D00177227 /* YDHPageViewController.h */,
+				2245A2BA1F10730D00177227 /* YDHPageViewController.m */,
+				2245A2BF1F1073EF00177227 /* YDHSegmentBar.h */,
+				2245A2C01F1073EF00177227 /* YDHSegmentBar.m */,
+			);
+			path = YDHUIPageViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,7 +300,9 @@
 				2245A28A1F10718A00177227 /* ViewController.m in Sources */,
 				2245A2871F10718A00177227 /* AppDelegate.m in Sources */,
 				2245A2841F10718A00177227 /* main.m in Sources */,
+				2245A2BB1F10730D00177227 /* YDHPageViewController.m in Sources */,
 				2245A2901F10718A00177227 /* YDHPageViewController.xcdatamodeld in Sources */,
+				2245A2C11F1073EF00177227 /* YDHSegmentBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +453,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UKWVP236T7;
 				INFOPLIST_FILE = YDHPageViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appgame.YDHPageViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -445,6 +466,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UKWVP236T7;
 				INFOPLIST_FILE = YDHPageViewController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appgame.YDHPageViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -520,6 +542,7 @@
 				2245A2B11F10718A00177227 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2245A2B21F10718A00177227 /* Build configuration list for PBXNativeTarget "YDHPageViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +551,7 @@
 				2245A2B41F10718A00177227 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2245A2B51F10718A00177227 /* Build configuration list for PBXNativeTarget "YDHPageViewControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +560,7 @@
 				2245A2B71F10718A00177227 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
